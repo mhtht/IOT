@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">控制</string>
+    <string name="title_notifications">我的</string>
+    <string name="add_task">添加任务</string>
+    <string name="cs">测试</string>
+</resources>

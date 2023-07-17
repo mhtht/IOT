@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <com.example.myapplication.ui.view.ClockView
+        android:id="@+id/home_ClockView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text_title_dial="温度" />
+
+    <com.example.myapplication.ui.view.ClockView
+        android:id="@+id/home_ClockView_too"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text_title_dial="亮度" />
+
+    <TextView
+        android:id="@+id/home_TextView_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/within_safety_indicators"
+        android:gravity="center"
+        android:text="火源检测：正常  "
+        app:layout_constraintEnd_toEndOf="@+id/home_ClockView_too"
+        app:layout_constraintStart_toStartOf="@+id/home_ClockView"
+        app:layout_constraintTop_toBottomOf="@+id/home_ClockView" />
+
+    <TextView
+        android:id="@+id/home_TextView_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/within_safety_indicators"
+        android:gravity="center"
+        android:text="烟雾检测：正常  "
+        app:layout_constraintEnd_toEndOf="@+id/home_TextView_h"
+        app:layout_constraintStart_toStartOf="@+id/home_TextView_h"
+        app:layout_constraintTop_toBottomOf="@+id/home_TextView_h" />
+
+    <TextView
+        android:id="@+id/home_TextView_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/within_safety_indicators"
+        android:gravity="center"
+        android:text="CH4检测：正常  "
+        app:layout_constraintEnd_toEndOf="@+id/home_TextView_y"
+        app:layout_constraintStart_toStartOf="@+id/home_TextView_y"
+        app:layout_constraintTop_toBottomOf="@+id/home_TextView_y" />
+
+    <TextView
+        android:id="@+id/home_TextView_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/within_safety_indicators"
+        android:gravity="center"
+        android:text="人员检测：正常  "
+        app:layout_constraintEnd_toEndOf="@+id/home_TextView_c"
+        app:layout_constraintStart_toStartOf="@+id/home_TextView_c"
+        app:layout_constraintTop_toBottomOf="@+id/home_TextView_c" />
+    <TextView
+        android:id="@+id/home_TextView_W"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/within_safety_not"
+        android:gravity="center"
+        android:text="WiFi-未连接"
+        app:layout_constraintEnd_toEndOf="@+id/home_TextView_r"
+        app:layout_constraintStart_toStartOf="@+id/home_TextView_r"
+        app:layout_constraintTop_toBottomOf="@+id/home_TextView_r" />
+
+    <TextView
+        android:id="@+id/home_cs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_TextView_W" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
